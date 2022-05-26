@@ -13,12 +13,12 @@
     <div class="header">
 
         <div class="logo">
-<img src="./bola_funcionando.png" alt="">
+            <img src="./bola_funcionando.png" alt="">
         </div>
         <div class="nome">
             InfoFUT
         </div>
-        
+
         <div class="lista">
             <ul>
                 <li><a href="Projeto Individual.html"></a>Home</li>
@@ -33,9 +33,26 @@
 
     </div>
     <div class="container">
-
+        <div class="slogan">
+            <u>Tudo sobre seu time? <br>
+                Nós mostramos o caminho!</u>
+        </div>
+        <div class="sites">
+            <img src="" alt="" id="img_site">
+        </div>
     </div>
 
 </body>
 
 </html>
+<script>
+    var contador = 0;
+    setInterval(mudar_foto, 3000)
+    var vtSites = ['espn.png', 'band.jpg', 'fox_sports.jpg', 'GE.png'];
+    function mudar_foto() {
+        for (; contador < vtSites.length; contador++) {
+            img_site.src = `${vtSites[contador]}`;
+        }
+    }
+   
+</script>
