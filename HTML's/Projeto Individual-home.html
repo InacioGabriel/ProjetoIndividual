@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoFUT</title>
-    <link rel="stylesheet" href="./Projeto Individual.css">
+    <link rel="stylesheet" href="../Projeto Individual.css">
 </head>
 
 <body>
     <div class="header">
 
         <div class="logo">
-            <img src="./bola_dourada.png" alt="">
+            <img src="../imagens/bola_dourada.png" alt="">
         </div>
         <div class="nome">
             InfoFUT
@@ -21,8 +21,8 @@
 
         <div class="lista">
             <ul>
-                <li><a href="Projeto Individual-home.html">Home</a></li>
-                <li><a href="Projeto Individual-iniciativa.html">Iniciativa</a></li>
+                <li><a href="./Projeto Individual-home.html">Home</a></li>
+                <li><a href="./Projeto Individual-iniciativa.html">Iniciativa</a></li>
                 <li>|</li>
                 <li><a href="#"></a>Cadastro</li>
                 <li><a href="#"></a>Login</li>
@@ -38,7 +38,7 @@
                 Nós mostramos o caminho!</u>
         </div>
         <div class="sites">
-            <img src="" alt="" id="img_site">
+            <img src="../imagens/espn.png" alt="" id="img_site">
         </div>
         <div class="footer">
             <h4>Feito por Gabriel Inácio, aluno SPTech :)</h4>
@@ -52,11 +52,15 @@
 <script>
     var contador = 0;
     setInterval(mudar_foto, 3000)
-    var vtSites = ['espn.png', 'band.jpg', 'fox_sports.jpg', 'GE.png'];
+    var vtSites = ['../imagens/espn.png', '../imagens/band.jpg', '../imagens/fox_sports.jpg', '../imagens/GE.png'];
     function mudar_foto() {
-        for (; contador < vtSites.length; contador++) {
+        if (contador == 4) {
+            contador = 0;
+        } else {
             img_site.src = `${vtSites[contador]}`;
+        contador++
         }
+      
     }
 
 </script>

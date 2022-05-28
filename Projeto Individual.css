@@ -22,7 +22,7 @@ body {
 .container {
     width: 100%;
     height: 86vh;
-    background-image: url(./estadio.jpg);
+    background-image: url(./imagens/estadio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -112,4 +112,7 @@ body {
     border-radius: 4px;
     display: flex;
     justify-content: center;
+}
+.porque h2{
+    height: 12%;
 }
