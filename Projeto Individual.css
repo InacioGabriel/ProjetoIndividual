@@ -37,6 +37,7 @@ body {
     margin-top: 40px;
     cursor: pointer;
 }
+
 .lista ul a {
     text-decoration: none;
     color: #daa520;
@@ -94,6 +95,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .content_iniciativa {
     height: 100%;
     width: 100%;
@@ -102,7 +104,8 @@ body {
     justify-content: space-between;
 
 }
-.porque{
+
+.porque {
     height: 50%;
     width: 20%;
     background-color: black;
@@ -111,8 +114,158 @@ body {
     border: 2px solid #daa520;
     border-radius: 4px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px black;
+
+
 }
-.porque h2{
+
+.porque h2 {
     height: 12%;
+    margin-left: 60px;
+
+}
+
+.porque p {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.oferecido {
+    height: 50%;
+    width: 20%;
+    background-color: black;
+    margin-right: 200px;
+    margin-top: 100px;
+    border: 2px solid #daa520;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+.oferecido h2 {
+    height: 12%;
+    margin-left: 60px;
+}
+
+.oferecido p {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#times_simbolo {
+    width: 40%;
+    margin-left: 80px;
+    color: black;
+    background-color: #daa520;
+}
+
+#simbolo {
+    height: 50%;
+    width: 20%;
+    margin-top: 150px;
+}
+
+.cadastro {
+    height: 80%;
+    width: 30%;
+    background-color: black;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #daa520;
+    border-radius: 4px;
+
+}
+
+.container_cadastro {
+    width: 100%;
+    height: 86vh;
+    background-image: url(./imagens/estadio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_cadastro input {
+    width: 90%;
+    margin-left: 20px;
+    background-color: black;
+    color: #daa520;
+}
+
+.container_cadastro p {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.container_cadastro h1 {
+    width: 80%;
+    margin-left: 140px;
+}
+
+.cadastro_sites {
+    height: 60%;
+    width: 30%;
+    background-color: black;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    border: 2px solid #daa520;
+    border-radius: 4px;
+}
+
+.cadastro_sites h1 {
+    width: 80%;
+    margin-left: 100px;
+}
+
+.cadastro_sites select {
+    width: 90%;
+    margin-left: 20px;
+    background-color: black;
+    color: #daa520;
+}
+
+.cadastro_sites button {
+    background-color: #daa520;
+    color: black;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 25px;
+    font-weight: bolder;
+    border: #daa520;
+}
+.login{
+    height: 45%;
+    width: 30%;
+    background-color: black;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #daa520;
+    border-radius: 4px;
+}
+.login button {
+    background-color: #daa520;
+    color: black;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 25px;
+    font-weight: bolder;
+    border: #daa520;
+}
+.login h1{
+    margin-left: 185px;
 }
