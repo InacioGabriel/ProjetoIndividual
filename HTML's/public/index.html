@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoFUT</title>
+    <link rel="stylesheet" href="../Projeto Individual.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="logo">
+            <img src="../imagens/bola_dourada.png" alt="">
+        </div>
+        <div class="nome">
+            InfoFUT
+        </div>
+
+        <div class="lista">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./Projeto Individual-iniciativa.html">Iniciativa</a></li>
+                <li>|</li>
+                <li><a href="./Projeto Individual-Cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>Analytics</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="slogan">
+            <u>Tudo sobre seu time? <br>
+                Nós mostramos o caminho!</u>
+        </div>
+        <div class="sites">
+            <img src="../imagens/espn.png" alt="" id="img_site">
+        </div>
+        <div class="footer">
+            <h4>Feito por Gabriel Inácio, aluno SPTech :)</h4>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    var contador = 0;
+    setInterval(mudar_foto, 3000)
+    var vtSites = ['../imagens/espn.png', '../imagens/band.jpg', '../imagens/fox_sports.jpg', '../imagens/GE.png'];
+    function mudar_foto() {
+        if (contador == 4) {
+            contador = 0;
+        } else {
+            img_site.src = `${vtSites[contador]}`;
+            contador++
+        }
+
+    }
+
+</script>
