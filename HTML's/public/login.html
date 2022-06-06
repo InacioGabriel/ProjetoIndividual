@@ -11,7 +11,7 @@
     <div class="header">
 
         <div class="logo">
-            <img src="../imagens/bola_dourada.png" alt="">
+            <img src="imagens/bola_dourada.png" alt="">
         </div>
         <div class="nome">
             InfoFUT
@@ -23,7 +23,6 @@
                 <li>|</li>
                 <li><a href="./Projeto Individual-Cadastro.html">Cadastro</a></li>
                 <li><a href="#">Login</a></li>
-                <li>Analytics</li>
             </ul>
         </div>
     </div>
@@ -62,6 +61,13 @@
 
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
+        if (emailVar.indexOf("@") == -1) {
+            // cardErro.style.display = "block"
+            alert (`Email inválido`);
+
+            // finalizarAguardar();
+            return false;
+        }
 
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -84,7 +90,7 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.Nome_Completo;
                     sessionStorage.ID_USUARIO = json.idTorcedor;
-                    alert(`deu certo`)
+                    alert(`Login OK`)
                     setTimeout(function () {
                         window.location = "dashboard.html";
                     }, 1000); // apenas para exibir o loading

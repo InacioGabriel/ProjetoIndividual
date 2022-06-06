@@ -60,14 +60,27 @@ body {
     margin-top: -300px;
 }
 #button_dash {
-    margin-left: 60px;
     margin-top: 70px;
+}
+#button_dash button {
     background-color: black;
     color: #daa520;
+    cursor: pointer;
+    border: 2px solid #daa520;
+    width: 100%;
+    height: 200%;
 }
 #button_dash2 {
-    margin-left: 60px;
     margin-top: 20px;
+}
+#button_dash2 button {
+    background-color: black;
+    color: #daa520; 
+    cursor: pointer;
+    border: 2px solid #daa520;
+    width: 100%;
+    height: 150%;
+    margin-top: 10px;
 }
 
 
@@ -287,6 +300,7 @@ body {
     margin-top: 25px;
     font-weight: bolder;
     border: #daa520;
+    cursor: pointer;
 }
 .login{
     height: 45%;
@@ -307,6 +321,7 @@ body {
     margin-top: 25px;
     font-weight: bolder;
     border: #daa520;
+    cursor: pointer;
 }
 .login h1{
     margin-left: 185px;
@@ -322,4 +337,32 @@ body {
 }
 .grafico {
     background-color: black;
+}
+.cards{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.site_cards{
+    width: 25%;
+    height: 30%;
+    border: 2px solid #daa520;
+    border-radius: 4px;
+}
+.cards .site_cards img {
+    width: 100%;
+    height: 100%;
+}
+.site_cards button{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #daa520;
 }

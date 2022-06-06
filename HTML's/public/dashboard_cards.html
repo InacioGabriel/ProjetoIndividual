@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoFUT-Usuario</title>
+    <link rel="stylesheet" href="Projeto Individual.css">
+</head>
+<body>
+    <div class="header_dash">
+
+        <div class="logo">
+            <img src="imagens/bola_dourada.png" alt="">
+        </div>
+        <div class="nome">
+            InfoFUT
+        </div>
+
+        <div class="lista">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Projeto Individual-iniciativa.html">Iniciativa</a></li>
+                <li>|</li>
+                <li><a href="./Projeto Individual-Cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="side_bar">
+            <h2>Olá, <span id="usuario"></span></h2>
+            <div id="button_dash"><button onclick="pagina_site()"><a href="dashboard_cards.html">Sites</a></button></div>
+            <div id="button_dash2"><button onclick="pagina_grafico()"><a href="dashboard.html">Gráfico</a></button></div>
+            
+        </div>
+    <div class="cards">
+        <div class="site_cards" style="background-color: black; color: #daa520; display: flex; justify-content: center; align-items: center;"><h2><u>Acompanhe as notícias</u> </h2></div>
+
+        <div class="site_cards"><button onclick="espn()"><img src="imagens/espn.png" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="fox()"><img src="imagens/fox_sports.jpg" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="band()"><img src="imagens/band.jpg" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="ge()"><img src="imagens/GE.png" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="goal()"><img src="imagens/goal2.png" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="lance()"><img src="imagens/lance.webp" alt=""></button></div>
+
+        <div class="site_cards"><button onclick="uol()"><img src="imagens/uol.png" alt=""></button></div>
+    </div>
+
+    </div>
+
+</body>
+</html>
+<script>
+    var nome = sessionStorage.NOME_USUARIO;
+    usuario.innerHTML = nome;
+
+    function espn() {
+        window.location.href = "https://www.espn.com.br/"
+    }
+    function fox() {
+        window.location.href = "https://www.espn.com.br/"
+    }
+    function band() {
+        window.location.href = "https://bandsports.band.uol.com.br/"
+    }
+    function ge() {
+        window.location.href = "https://ge.globo.com/"
+    }
+    function goal() {
+        window.location.href = "https://www.goal.com/br"
+    }
+    function lance() {
+        window.location.href = "https://www.lance.com.br/"
+    }
+    function uol() {
+        window.location.href = "https://www.uol.com.br/esporte/"
+    }
+
+</script>

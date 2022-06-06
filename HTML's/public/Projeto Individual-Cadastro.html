@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoFUT-Cadastro</title>
-    <link rel="stylesheet" href="../Projeto Individual.css">
+    <link rel="stylesheet" href="Projeto Individual.css">
 </head>
 
 <body>
     <div class="header">
 
         <div class="logo">
-            <img src="../imagens/bola_dourada.png" alt="">
+            <img src="imagens/bola_dourada.png" alt="">
         </div>
         <div class="nome">
             InfoFUT
@@ -26,7 +26,6 @@
                 <li>|</li>
                 <li><a href="#">Cadastro</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li>Analytics</li>
             </ul>
         </div>
     </div>
@@ -43,7 +42,7 @@
             <input type="text" id="estado">
             <p>Email:</p>
             <input type="text" id="email">
-            <p>Senha:</p>
+            <p>Senha (max. 8 caracteres):</p>
             <input type="password" id="senha">
         </div>
         <div class="cadastro_sites">
@@ -91,9 +90,16 @@
             // finalizarAguardar();
             return false;
         }
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" ) {
+        if (senhaVar.length > 8) {
             // cardErro.style.display = "block"
-            alert (`Mensagem de erro para todos os campos em branco`);
+            alert (`Máximo de 8 caracteres para a senha`);
+
+            // finalizarAguardar();
+            return false;
+        }
+        if (emailVar.indexOf("@") == -1) {
+            // cardErro.style.display = "block"
+            alert (`Email inválido`);
 
             // finalizarAguardar();
             return false;
