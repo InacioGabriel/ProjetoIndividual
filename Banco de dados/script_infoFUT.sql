@@ -9,23 +9,23 @@ CREATE TABLE Torcedor (
   CPF CHAR(13),
   estado CHAR(2),
   email VARCHAR(45),
-  senha VARCHAR(8)
+  senha VARCHAR(8),
+  fkPreferido int,
+  foreign key (fkPreferido) references Site(idSite)
   );
 
-CREATE TABLE Sites (
-  idSites INT primary key auto_increment,
+CREATE TABLE Site (
+  idSite INT primary key auto_increment,
   url VARCHAR(45),
   nome VARCHAR(45),
   descrição VARCHAR(45)
   );
-
-CREATE TABLE Preferencias (
-  fkTorcedor INT,
-  fkSite INT,
-  data DATETIME DEFAULT now(),
-  PRIMARY KEY (fkTorcedor, fkSite),
-    FOREIGN KEY (fkTorcedor) REFERENCES Torcedor(idTorcedor),
-    FOREIGN KEY (fkSite) REFERENCES Sites(idSites)
-    );
-
-
+insert into Site values 
+(1, 'https://www.espn.com.br/', 'Fox Sports', 'Site do grupo Disney'),
+(2, 'https://bandsports.band.uol.com.br/', 'Band Sports', 'Site do grupo Bandeirantes'),
+(3, 'https://ge.globo.com/', 'Globo Esporte', 'Site do grupo Globo'),
+(4, 'https://www.espn.com.br/', 'Espn', 'Site do grupo Disney'),
+(5, 'https://www.lance.com.br/', 'Lance!', 'Site indendente de futebol'),
+(6, 'https://www.uol.com.br/esporte/', 'UOL Esporte', 'Site do grupo Folha'),
+(7, 'https://www.goal.com/br', 'Goal', 'Site independente de futebol');
+select* from torcedor;
